@@ -1,0 +1,1 @@
+[[nodiscard]] the return value should not be discard .   since c++ 20.
