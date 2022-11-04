@@ -3,3 +3,8 @@
 constexpr 常量表达式关键字，在编译阶段就把变量计算出来当成常量使用，提高运行速度
 
 you can think of the complier as a pipeline where each stage'sjob is to organize the data representing the user's code in a way that makes next stage simpler to implement
+
+logic gates abstract away the details of CMOS
+machine language abstracts away the detail of logic gates
+assembly language abstracts away the details of machine languages
+programming language abstracts away the detail of assembly languages
