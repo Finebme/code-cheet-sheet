@@ -8,3 +8,11 @@ logic gates abstract away the details of CMOS
 machine language abstracts away the detail of logic gates
 assembly language abstracts away the details of machine languages
 programming language abstracts away the detail of assembly languages
+
+FPGA Filed Programmable Gate Array is a hardware an array of re-configurable gates that makes circuit structure programmable after it is shipped away from the factory
+
+the difference between FPGA and other embedded computers is that programs in FPGA are implemented at the digital logic level, while programs in embedded computers like microcontrollers or system-on-chip devices are implemented at assembly code level
+
+hexdump asmfile
+nasm -f bin asmfile outputfile    generate binary code
+objdump -d asmfile               show assembly code
