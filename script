@@ -1,0 +1,4 @@
+fopen() fclose()
+fputc() fgetc()
+fread() fwrite()
+fgets() fwrites()
