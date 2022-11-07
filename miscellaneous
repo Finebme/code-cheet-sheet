@@ -16,3 +16,5 @@ the difference between FPGA and other embedded computers is that programs in FPG
 hexdump asmfile
 nasm -f bin asmfile outputfile    generate binary code
 objdump -d asmfile               show assembly code
+
+REPL Read a line of input,Evaluate it,Print the result,then Loop and do it all over again.
