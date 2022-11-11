@@ -22,3 +22,34 @@ REPL Read a line of input,Evaluate it,Print the result,then Loop and do it all o
 vue-cli-service serve --mode {file}    can appoint certain file , dev->.env.dev
 
 Ctrl+Alt+Shift+N Idea search and locate the METHOD
+
+Near pointer is a 16-bit/32-bit offset within a segment,also called effective address.
+Far pointer is also an offset like a near pointer, but with an explicit segment selector.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
