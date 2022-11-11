@@ -20,3 +20,5 @@ objdump -d asmfile               show assembly code
 REPL Read a line of input,Evaluate it,Print the result,then Loop and do it all over again.
 
 vue-cli-service serve --mode {file}    can appoint certain file , dev->.env.dev
+
+Ctrl+Alt+Shift+N Idea search and locate the METHOD
