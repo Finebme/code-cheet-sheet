@@ -27,9 +27,7 @@ Shift+Alt+C Idea show recent change
 Near pointer is a 16-bit/32-bit offset within a segment,also called effective address.
 Far pointer is also an offset like a near pointer, but with an explicit segment selector.
 
-
-
-
+ELF => Executable and Linkable Format
 
 
 
