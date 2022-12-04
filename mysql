@@ -1,2 +1,5 @@
 Q:联合索引未生效  select * from t where rptn=2021 and rptm=10
 A:rptn是varchar类型，2021没加括号select * from t where rptn="2021" and rptm="10"
+
+Q:first time login mysql,how to set the password
+A:./mysqladmin -u root password "yourprettyeasyforgetpwd"
