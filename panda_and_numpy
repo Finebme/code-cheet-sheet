@@ -1,0 +1,1 @@
+numpy.random.randn(2,2,2) get a 2*2*2 matrix filled with random num
