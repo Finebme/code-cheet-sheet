@@ -23,6 +23,7 @@ dataframs.T  transpose of matrix
 		df2[df2['E'].isin(['two','four'])]
 获取标量值 df.at['20130102','A']
 
+ndarray numpy的多维数组 .shape 返回代表其维数的元组
 
 
 
