@@ -1,0 +1,1 @@
+zip(*values) 将行转置为列然后zip
