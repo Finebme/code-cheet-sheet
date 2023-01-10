@@ -1,5 +1,52 @@
+Underlying the visual process model above is the XML structure of BPMN.
+
 @Bean
 public TaskRuntimeEventListener taskAssignedListener(){
 	return task->logger.info(task.getEntity().getName);
 }
 注册一个监听器，当有runtime event 发生的时候会被触发。
+
+public interface TaskRuntime {
+  TaskRuntimeConfiguration configuration();
+  Task task(String taskId);
+  Page tasks(Pageable pageable);
+  Page tasks(Pageable pageable, GetTasksPayload payload);
+  Task create(CreateTaskPayload payload);
+  Task claim(ClaimTaskPayload payload);
+  Task release(ReleaseTaskPayload payload);
+  Task complete(CompleteTaskPayload payload);
+  Task update(UpdateTaskPayload payload);
+  Task delete(DeleteTaskPayload payload);
+  ...
+}
+
+@Autowired
+private TaskRuntime taskRuntime;
+
+taskRuntime.create(
+            TaskPayloadBuilder.create()
+                .withName("First Team Task")
+                .withDescription("This is something really important")
+                .withGroup("activitiTeam")
+                .withPriority(10)
+           .build());
+
+public interface ProcessRuntime {
+  ProcessRuntimeConfiguration configuration();
+  ProcessDefinition processDefinition(String processDefinitionId);
+  Page processDefinitions(Pageable pageable);
+  Page processDefinitions(Pageable pageable,
+              GetProcessDefinitionsPayload payload);
+  ProcessInstance start(StartProcessPayload payload);
+  Page processInstances(Pageable pageable);
+  Page processInstances(Pageable pageable,
+              GetProcessInstancesPayload payload);
+  ProcessInstance processInstance(String processInstanceId);
+  ProcessInstance suspend(SuspendProcessPayload payload);
+  ProcessInstance resume(ResumeProcessPayload payload);
+  ProcessInstance delete(DeleteProcessPayload payload);
+  void signal(SignalPayload payload);
+  ...
+}
+
+
