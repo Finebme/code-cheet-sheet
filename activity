@@ -1,0 +1,5 @@
+@Bean
+public TaskRuntimeEventListener taskAssignedListener(){
+	return task->logger.info(task.getEntity().getName);
+}
+注册一个监听器，当有runtime event 发生的时候会被触发。
