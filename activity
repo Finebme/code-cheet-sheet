@@ -60,3 +60,6 @@ Querying tasks assigned to users or groups
 Creating new standalone tasks. These are tasks that are not related to a process instances.
 Manipulating to which user a task is assigned or which users are in some way involved with the task.
 Claiming and completing a task. Claiming means that someone decided to be the assignee for the task, meaning that this user will complete the task. Completing means doing the work of the tasks. Typically this is filling in a form of sorts.
+
+
+The IdentityService is pretty simple. It allows the management (creation, update, deletion, querying, …​) of groups and users. It is important to understand that Activiti actually doesn’t do any checking on users at runtime. For example, a task could be assigned to any user, but the engine does not verify if that user is known to the system. This is because the Activiti engine can also be used in conjunction with services such as LDAP, Active Directory, etc.
