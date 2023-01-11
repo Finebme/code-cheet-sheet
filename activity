@@ -74,4 +74,5 @@ The ManagementService is typically not needed when coding custom application usi
 
 The DynamicBpmnService can be used to change part of the process definition without needing to redeploy it. You can for example change the assignee definition for a user task in a process definition, or change the class name of a service task.
 
+When the runtimeService.startProcessInstanceByKey("myProcess") is called, it will now use the process definition with version 2, as this is the latest version of the process definition.
 
