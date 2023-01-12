@@ -76,3 +76,22 @@ The DynamicBpmnService can be used to change part of the process definition with
 
 When the runtimeService.startProcessInstanceByKey("myProcess") is called, it will now use the process definition with version 2, as this is the latest version of the process definition.
 
+// Start a process instance
+  runtimeService.startProcessInstanceByKey("financialReport");
+
+We can now retrieve this task through the TaskService by adding the following logic:
+List<Task> tasks = taskService.createTaskQuery().taskCandidateUser("kermit").list();
+
+TaskService taskService = processEngine.getTaskService();
+List<Task> tasks = taskService.createTaskQuery().taskCandidateGroup("accountancy").list();
+
+
+An accountant now needs to claim the task. By claiming the task, the specific user will become the assignee of the task and the task will disappear from every task list of the other members of the accountancy group. Claiming a task is programmatically done as follows:
+
+taskService.claim(task.getId(), "fozzie");
+
+The accountant can now start working on the financial report. Once the report is finished, he can complete the task, which means that all work for that task is done.
+taskService.complete(task.getId());
+
+historyService.createHistoricProcessInstanceQuery().processInstanceId(procId).singleResult();
+System.out.println("Process instance end time: " + historicProcessInstance.getEndTime());
