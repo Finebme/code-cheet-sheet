@@ -1,0 +1,3 @@
+tab to complete
+
+ctrl-r to search through command history. press ctrl-r repeatedlly to cycle through more matches,press Enter to execute the found command,or hit the right arrow to put the result in the current line to allow editing.
