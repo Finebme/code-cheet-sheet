@@ -4,3 +4,5 @@ ctrl-r to search through command history. press ctrl-r repeatedlly to cycle thro
 
 ctrl-w to delete the last word
 ctrl-u to delete the content from current cursor back to the start of the line
+
+alt-b alt-f to move back or forword by word
