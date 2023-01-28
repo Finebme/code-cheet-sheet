@@ -5,3 +5,18 @@ Q:first time login mysql,how to set the password
 A:./mysqladmin -u root password "yourprettyeasyforgetpwd"
 
 procedure in 参数就像其他语言的入参一样，不改变传入的值；inout参数会改变传入的值；out 像是return的一种替代方式，更改传入的一个全局变量名。
+
+if:
+delimiter &&
+create procedure pro002(in parameter int)
+	begin
+		declare auto_inc_params int;
+        set auto_inc_params = parameter + 1;
+        if auto_inc_params <> 0 then
+		select "it's not 0";
+	else
+		select "it's 0";
+	end if;
+    end;
+&&
+delimiter ;
