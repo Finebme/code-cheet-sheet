@@ -3,3 +3,5 @@ A:rptn是varchar类型，2021没加括号select * from t where rptn="2021" and r
 
 Q:first time login mysql,how to set the password
 A:./mysqladmin -u root password "yourprettyeasyforgetpwd"
+
+procedure in 参数就像其他语言的入参一样，不改变传入的值；inout参数会改变传入的值；out 像是return的一种替代方式，更改传入的一个全局变量名。
