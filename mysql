@@ -20,3 +20,23 @@ create procedure pro002(in parameter int)
     end;
 &&
 delimiter ;
+
+case:
+delimiter &&
+create procedure pro003(in parameter int)
+	begin
+		case parameter
+        when 0 then
+			select "equal 0";
+		when 1 then
+			select "equal 1";
+		else
+			select "others";
+		end case;
+    end;
+&&
+delimiter ;
+
+
+
+
