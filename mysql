@@ -51,6 +51,32 @@ create procedure pro005()
 &&
 delimiter ;
 
-call pro005();
+另外两种循环方式，repeat util, loop leave
+repeat and loop:
+delimiter &&
+create procedure pro006()
+	begin
+		declare v int;
+        set v=0;
+        repeat
+			set v = v+1;
+		until v > 5 end repeat;
+	end;
+&&
+delimiter ;
 
+delimiter &&
+create procedure pro007()
+	begin
+		declare v int;
+        set v = 0;
+        LOOP_LABLE:loop
+			set v = v+1;
+            if v>=5 then
+				leave LOOP_LABLE;
+			end if;
+		end loop;
+	end;
+&&
+delimiter ;
 
