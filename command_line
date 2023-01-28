@@ -6,3 +6,5 @@ ctrl-w to delete the last word
 ctrl-u to delete the content from current cursor back to the start of the line
 
 alt-b alt-f to move back or forword by word
+
+find . -name '*.py' | xargs grep 'datetime.now()'
