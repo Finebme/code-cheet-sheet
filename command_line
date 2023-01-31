@@ -10,3 +10,11 @@ alt-b alt-f to move back or forword by word
 find . -name '*.py' | xargs grep 'datetime.now()'
 
 du -hs *   to have a quick summary of disk usage.
+
+read name
+echo "hello, $name"
+
+export can put a var to other environment
+
+./some.sh will spawn a new shell new env
+../some.sh will run at current env, which means the env no changed , the env is the same
