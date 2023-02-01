@@ -80,3 +80,4 @@ create procedure pro007()
 &&
 delimiter ;
 
+存储过程的声明有特定顺序 变量》游标》handler
