@@ -45,7 +45,7 @@ create procedure pro005()
 		declare i int;
         set i = 0;
         while i < 1000000 do
-			set i = i+1;
+		set i = i+1;
 		end while;
     end;
 &&
