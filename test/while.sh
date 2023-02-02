@@ -6,3 +6,4 @@ do
 	read INPUT_STRING
 	echo "you typed: $INPUT_STRING"
 done
+echo "ok~byebye"
