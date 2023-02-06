@@ -88,3 +88,8 @@ delimiter ;
 不可重复度：针对其他事务的update操作，前后两次读取内容不同。 加行锁解决。
 幻读：其他事务insert和delete操作，前后两次读取内容不同。加表锁解决。
 
+read uncommitted 
+read committed 解决脏读
+repeatable read 解决不可重复读
+serializable 解决幻读
+
