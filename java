@@ -9,3 +9,5 @@ path02 = AController.class.getClassLoader().getResource("temp/a.txt").getPath();
 path02 is safer,path01 would be null after pacakge
 
 Collections.min(someList,Comparator.comparing(Entity::func))
+
+不定项参数要放在方法参数的最后一个
