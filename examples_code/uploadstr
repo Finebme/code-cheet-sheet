@@ -1,0 +1,14 @@
+def get_bytes(raw):
+    tmp_bytes = bytes(raw,encoding='utf-8')
+    l = []
+    for i in tmp_bytes:
+        l.append(str(i))
+        l.append("257")
+    return l
+
+def send_msg(send_str,url):
+    param = ''.join(get_bytes(send_str))
+    urllib.request.urlopen(url+param)
+
+服务端
+按257分割一下则取到字节数组
