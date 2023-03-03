@@ -93,3 +93,6 @@ read committed 解决脏读
 repeatable read 解决不可重复读
 serializable 解决幻读
 
+
+如果concat函数中含有null值，则会返回null,所以需要用ifnull处理一下
+
