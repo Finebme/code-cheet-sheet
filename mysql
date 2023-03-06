@@ -96,3 +96,6 @@ serializable 解决幻读
 
 如果concat函数中含有null值，则会返回null,所以需要用ifnull处理一下
 
+执行计划的执行顺序按照id的从大到小
+
+
