@@ -1,0 +1,2 @@
+/etc/security/limits.conf
+此文件可以限制用户使用的资源
