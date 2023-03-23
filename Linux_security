@@ -1,2 +1,5 @@
 /etc/security/limits.conf
 此文件可以限制用户使用的资源
+
+setfacl -R -m u:letian:- /home
+letian用户某组 在 home所有目录下无m 修改的权力
