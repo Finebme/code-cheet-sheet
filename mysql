@@ -98,4 +98,7 @@ serializable 解决幻读
 
 执行计划的执行顺序按照id的从大到小
 
+sum和limit混用，小心ilimit是最后执行的
+
+
 
